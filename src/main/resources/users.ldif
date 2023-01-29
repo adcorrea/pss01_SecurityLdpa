@@ -1,0 +1,48 @@
+version: 1
+
+dn: ou=groups,dc=openmicroscopy,dc=org
+objectclass: organizationalUnit
+objectclass: top
+ou: groups
+
+dn: ou=people,dc=openmicroscopy,dc=org
+objectclass: organizationalUnit
+objectclass: top
+ou: people
+
+dn: uid=lnardone,ou=people,dc=openmicroscopy,dc=org
+objectclass: inetOrgPerson
+objectclass: organizationalPerson
+objectclass: person
+objectclass: top
+cn: Leo Nardone
+sn: Leo
+uid: lnardone
+userPassword: {SHA}F1OkcxtiioPmVX3tJlIHzZsXkDQ=
+
+dn: uid=mnardone,ou=people,dc=openmicroscopy,dc=org
+objectclass: inetOrgPerson
+objectclass: organizationalPerson
+objectclass: person
+objectclass: top
+cn: Massimo Nardone
+sn: Nardone
+uid: mnardone
+userPassword: {SHA}xcS5y9T0kjBXDpYijejbhmILFwY=
+
+dn: cn=administrators,ou=groups,dc=openmicroscopy,dc=org
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: administrators
+uniqueMember: uid=mnardone,ou=people,dc=openmicroscopy,dc=org
+ou: admin
+
+dn: cn=users,ou=groups,dc=openmicroscopy,dc=org
+objectclass: groupOfNames
+objectclass: top
+cn: users
+member: uid=lnardone,ou=people,dc=openmicroscopy,dc=org
+ou: user
+
+
+

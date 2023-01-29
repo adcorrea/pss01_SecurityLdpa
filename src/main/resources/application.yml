@@ -1,0 +1,5 @@
+ldap:
+  urls: ldap://localhost:389
+  base: dc=openmicroscopy,dc=org
+  username: uid=admin,ou=system
+  password: secret
