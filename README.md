@@ -1,11 +1,20 @@
 # pss01_SecurityLdpa
 Projeto funcional com autenticação usando LDPA do Spring Security
 
+Requitos
+
+JDK 11
+
+ApacheDS Studio
+
+Docker
+
 Instruções de uso
-Instalar o ApacheDS Studio no linke https://directory.apache.org/studio/downloads.html.
+Instalar o ApacheDS Studio no link https://directory.apache.org/studio/downloads.html.
 
 
 Abrir o cmd e rodar o comando abaixo para baixar a imagem do ApacheDS Server e subir no docker (precisa do docker instalado)
+
 docker run --name ldap -d -p 389:10389 openmicroscopy/apacheds
 
 Link da imagem no dockerhub
